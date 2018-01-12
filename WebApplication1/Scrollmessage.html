@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div#abgne_marquee {
+            position: relative;
+            overflow: hidden; /* 超出範圍的部份要隱藏 */
+            width: 375px;
+            height: 25px;
+            border: 1px solid #cccccc;
+        }
+
+            div#abgne_marquee ul, div#abgne_marquee li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            div#abgne_marquee ul {
+                position: absolute;
+            }
+                /*overflow: hidden;超出範圍的部份要隱藏*/
+                div#abgne_marquee ul li a {
+                    display: block;
+                    overflow: hidden;
+                    font-size: 12px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-decoration: none;
+                }
+    </style>
+   
+</head> 
+<body>
+    <table id="myTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Due</th>
+                <th>Web Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smith</td>
+                <td>John</td>
+                <td>jsmith@gmail.com</td>
+                <td>$50.00</td>
+                <td>http://www.jsmith.com</td>
+            </tr>
+            <tr>
+                <td>Bach</td>
+                <td>Frank</td>
+                <td>fbach@yahoo.com</td>
+                <td>$50.00</td>
+                <td>http://www.frank.com</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>Jason</td>
+                <td>jdoe@hotmail.com</td>
+                <td>$100.00</td>
+                <td>http://www.jdoe.com</td>
+            </tr>
+            <tr>
+                <td>Conway</td>
+                <td>Tim</td>
+                <td>tconway@earthlink.net</td>
+                <td>$50.00</td>
+                <td>http://www.timconway.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="/path/to/jquery-latest.js"></script>
+    <script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script>
+    <div id="abgne_marquee">
+        <ul>
+            <li> <a href="http://www.flycan.com.tw/course/course_javascript.php"> 【開課快訊】04/11 JavaScript ＆ CSS 互動程式入門班 (週日班)</a> </li>
+            <li> <a href="http://www.flycan.com.tw/course/course_photopro.php"> 【開課快訊】05/09 Photoshop 影像達人專修班 (週日班)</a> </li>
+            <li> <a href="http://abgne.tw/site-proclamation/questionnaire-1.html"> 【調查】你的獎品你來決定 - 活動獎品大調查</a> </li>
+        </ul>
+    </div>
+</body> 
+</html >
